@@ -1,4 +1,4 @@
-# .github/workflows/label-commenter-config.yml
+# .github/configs/label-commenter-config.yml
 
 labels:
   - name: 'active'
