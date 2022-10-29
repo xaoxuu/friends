@@ -1,0 +1,28 @@
+# .github/workflows/label-commenter-config.yml
+
+labels:
+  - name: 'active'
+    labeled:
+      issue:
+        body: |
+          **🎉 恭喜，友链添加成功！**
+
+          稍后片刻刷新网页就可以看到您的链接。
+
+          > 如果您的站点信息发生了变动，请直接修改这个 issue 的内容。
+
+  - name: 'suspend'
+    labeled:
+      issue:
+        body: |
+          **👋 请及时添加本站友链**
+
+          距离成功只剩一步之遥了，请把本站添加到您的友链中，然后再下方评论告知。
+
+  - name: '404'
+    labeled:
+      issue:
+        body: |
+          **⚠️ 抱歉，您的网站打不开，现已下架。**
+
+          如果您确认可以打开，请在下方评论告知，我们会在人工审核通过后恢复上架。
