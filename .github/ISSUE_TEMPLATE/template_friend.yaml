@@ -23,7 +23,7 @@ body:
     validations:
       required: true
     attributes:
-      label: 配置文件
+      label: 友链信息
       description: 请在双引号中填写，不要修改格式。
       value: |
         ```json
@@ -38,7 +38,7 @@ body:
   - type: input
     id: friends-html
     attributes:
-      label: 我的友链地址
+      label: 友链地址
       description: 请输入您的友链页面地址。
       placeholder: "如: https://xaoxuu.com/friends/"
     validations:
@@ -46,6 +46,6 @@ body:
   - type: input
     id: friends-repo
     attributes:
-      label: 我的友链仓库（可选）
+      label: 友链仓库（可选）
       description: 如果您使用 issue 作为友链源，请附上 issue 仓库链接，否则请直接添加 xaoxuu.com 到您的友链中。
       placeholder: "如: https://github.com/xaoxuu/friends/"
