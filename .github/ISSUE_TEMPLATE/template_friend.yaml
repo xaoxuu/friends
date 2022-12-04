@@ -3,14 +3,19 @@ description: 自助添加友链。请遵守 JSON 格式，在双引号中填写�
 title: '友链：'
 labels: []
 body:
-  - type: input
-    id: friends-html
-    attributes:
-      label: 我的友链地址
-      description: 请输入您的友链页面地址。
-      placeholder: "如: https://xaoxuu.com/friends/"
+  - type: checkboxes
+    id: checks
     validations:
       required: true
+    attributes:
+      label: 检查清单
+      description: 请认真检查以下清单中的每一项，并在相符的项前打勾。
+      options:
+        - label: 合法的、非营利性、无商业广告、无木马植入。
+        - label: 有实质性原创内容的 HTTPS 站点，发布过至少 5 篇原创文章，内容题材不限。
+        - label: 有独立域名，非免费域名。
+        - label: 博客已运行至少半年，非刚搭建好。
+        - label: 与 xaoxuu 有至少 5 次有效互动（有内容的留言或者 issue 等）。
   - type: textarea
     id: config-file
     validations:
@@ -28,6 +33,14 @@ body:
             "description": ""
         }
         ```
+  - type: input
+    id: friends-html
+    attributes:
+      label: 我的友链地址
+      description: 请输入您的友链页面地址。
+      placeholder: "如: https://xaoxuu.com/friends/"
+    validations:
+      required: true
   - type: input
     id: friends-repo
     attributes:
