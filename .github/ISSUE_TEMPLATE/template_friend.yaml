@@ -1,5 +1,5 @@
 name: 友链模板
-description: 自助添加友链。请遵守 JSON 格式，在双引号中填写。
+description: 自助添加友链。
 labels: []
 body:
   - type: checkboxes
@@ -47,5 +47,5 @@ body:
     id: friends-repo
     attributes:
       label: 友链仓库（可选）
-      description: 如果您使用 issue 作为友链源，请附上 issue 仓库链接，否则请直接添加 xaoxuu.com 到您的友链中。
+      description: 如果您使用 issue 作为友链源，请附上 issue 仓库链接。
       placeholder: "如: https://github.com/xaoxuu/friends/"
