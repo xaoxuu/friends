@@ -10,11 +10,11 @@ body:
       options:
         - required: true
           label: 合法的、非营利性、无商业广告、无木马植入。
-        - required: true
+        - required: false
           label: 有实质性原创内容的 HTTPS 站点，发布过至少 5 篇原创文章，内容题材不限。
-        - required: true
+        - required: false
           label: 有独立域名，非免费域名。
-        - required: true
+        - required: false
           label: 博客已运行至少半年，非刚搭建好。
         - required: false
           label: 与 xaoxuu 有至少 5 次有效互动（有内容的留言或者 issue 等）。
