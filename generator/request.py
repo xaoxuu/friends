@@ -27,3 +27,19 @@ def get_data(link):
         print(e.__traceback__.tb_frame.f_globals["__file__"])
         print(e.__traceback__.tb_lineno)
     return result
+
+def get_json(link, params=None):
+    cfg = config.load()
+    header = {
+        'Accept': 'application/vnd.github.v3+json'
+    }
+    try:
+        r = requests.get(link,
+                        headers=header,
+                        params=params,
+                        timeout=cfg['request']['timeout'],
+                        verify=cfg['request']['ssl'])
+        return r.json()
+    except Exception as e:
+        print(e)
+        return None
