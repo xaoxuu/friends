@@ -10,8 +10,6 @@ version = 'v2'
 outputdir = version  # 输出文件结构变化时，更新输出路径版本
 filenames = []
 json_pool = []
-baselink = 'https://github.com/'
-
 
 def mkdir(path):
     folder = os.path.exists(path)
@@ -21,27 +19,29 @@ def mkdir(path):
     else:
         print("dir exists:", path)
 
-def getData(repo,parameter,sort,data_pool,json_pool):
+def getData(repo, parameter, sort, data_pool, json_pool):
     try:
         for number in range(1, 100):
-            linklist = []
             print('page:', number)
-            url = 'https://github.com/' + repo + '/issues?page=' + str(number) + '&q=is%3Aopen'
+            url = f'https://api.github.com/repos/{repo}/issues'
+            params = {
+                'state': 'open',
+                'page': number,
+                'per_page': 30
+            }
             if parameter:
-                url = url + parameter
+                params['labels'] = parameter
             if sort:
-                url = url + '+sort%3A' + sort
-            print('parse:', url)
-            github = request.get_data(url)
-            soup = BeautifulSoup(github, 'html.parser')
-            main_content = soup.find_all('div', {'aria-label': 'Issues'})
-            if len(main_content):
-                linklist = main_content[0].find_all('a', {'class': 'Link--primary'})
-            if len(linklist) == 0:
+                params['sort'] = sort
+            
+            issues = request.get_json(url, params)
+
+            if not issues:
                 print('> end')
                 break
-            for item in linklist:
-                issueslink = baselink + item['href']
+
+            for issue in issues:
+                issueslink = issue['html_url']
                 issues_page = request.get_data(issueslink)
                 issues_soup = BeautifulSoup(issues_page, 'html.parser')
                 try:
@@ -67,17 +67,16 @@ def github_issuse(json_pool):
         # 如果没有配置groups，全部输出至data.json
         data_pool = []
         filenames.append("data")
-        parameter='+label%3A' + (filter["label"] if filter["label"] else '')
-        getData(filter["repo"],parameter,filter["sort"],data_pool,json_pool)
-
+        parameter = filter["label"] if filter["label"] else ''
+        getData(filter["repo"], parameter, filter["sort"], data_pool, json_pool)
     else:
         # 如果配置多个了groups，按照分组抓取并输出
         for group in filter["groups"]:
             print('start of group:', group)
             data_pool = []
             filenames.append(group)
-            parameter='+label%3A' + (filter["label"] if filter["label"] else '') + '+label%3A' + group
-            getData(filter["repo"],parameter,filter["sort"],data_pool,json_pool)
+            parameter = (filter["label"] if filter["label"] else '') + (',' + group if group else '')
+            getData(filter["repo"], parameter, filter["sort"], data_pool, json_pool)
             print("end of group:", group)
 
     print('------- github issues end ----------')
