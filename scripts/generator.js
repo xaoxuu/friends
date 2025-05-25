@@ -33,6 +33,7 @@ async function getIssues() {
       ...(config.generator.exclude_labels || []),
       ...Object.values(config.base.invalid_labels || {})
     ];
+    logger('info', `Filtering issues with blacklist labels: ${blacklistLabels.join(', ')}`);
     const filteredIssues = issues.filter(issue => {
       const issueLabels = issue.labels.map(label => label.name);
       return !blacklistLabels.some(blacklistLabel => issueLabels.includes(blacklistLabel));
