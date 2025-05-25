@@ -38,7 +38,7 @@ export const config = {
     
     // 需要排除的Issue标签
     // 包含这些标签的Issue将不会被解析
-    exclude_labels: ["审核中"],
+    exclude_labels: ["审核中", "缺少互动", "缺少文章", "风险网站"],
   },
 
   // 链接检查器配置
