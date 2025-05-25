@@ -61,31 +61,14 @@ async function checkSite(item) {
       ...config.request.headers
     };
 
+    // 检查当前页面是否可访问
     const response = await axios.get(url, {
       timeout: config.request.timeout,
       headers: headers,
       validateStatus: status => status < 500
     });
-    const $ = cheerio.load(response.data);
-
-    // 检查当前页面是否包含目标链接
-    if (await checkLinkInPage(url, headers, config.link_checker.targetLink)) {
-      return { status: config.base.site_status.valid };
-    }
-    
-    // 在友链页面中查找目标链接
-    const friendLinks = await findFriendLinks(item.issue_number);
-    for (const friendLink of friendLinks) {
-      try {
-        if (await checkLinkInPage(friendLink, headers, config.link_checker.targetLink)) {
-          return { status: config.base.site_status.valid };
-        }
-      } catch (error) {
-        logger('warn', `#${item.issue_number} Error checking friend page ${friendLink}: ${error.message}`);
-      }
-    }
-
-    return { status: config.base.site_status.invalid };
+    logger('info', `#${item.issue_number} Checked site: ${url}, status: ${response.status}`);
+    // 如果状态码为 403，可能是由于反爬机制，直接返回 invalid 状态
   } catch (error) {
     if (error.response) {
       if (error.response.status === 403) {
