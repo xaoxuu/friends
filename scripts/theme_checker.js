@@ -94,7 +94,7 @@ async function checkSite(item) {
       }
     }
     handleError(error, `#${item.issue_number} Error checking site ${url}`);
-    checkResult.ok = false;
+    checkResult.valid = false;
     checkResult.label = config.base.invalid_labels.unreachable;
   }
   return checkResult;
