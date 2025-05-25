@@ -49,6 +49,7 @@ async function findFriendLinks(issueNumber) {
 
 async function checkSite(item) {
   const url = item.url;
+  var checkResult = { valid: false };
   try {
     const { min, max } = config.request.delay;
     const delay = Math.floor(Math.random() * (max - min)) + min;
@@ -68,8 +69,24 @@ async function checkSite(item) {
       validateStatus: status => status < 500
     });
     logger('info', `#${item.issue_number} Checked site: ${url} status: ${response.status}`);
-    // 如果状态码为 403，可能是由于反爬机制，直接返回 invalid 状态
-    return { status: config.base.site_status.valid };
+    switch (response.status) {
+      case 200:
+        checkResult.valid = true;
+        break;
+      case 301:
+        checkResult.valid = true;
+        checkResult.label = config.base.valid_labels.redirect;
+        break;
+      case 403:
+        // 如果状态码为 403，可能是由于反爬机制
+        checkResult.valid = true;
+        checkResult.label = config.base.valid_labels.unknown;
+        break;
+      default:
+        checkResult.valid = false;
+        checkResult.label = config.base.invalid_labels.unreachable;
+        break;
+    }
   } catch (error) {
     if (error.response) {
       if (error.response.status === 403) {
@@ -79,8 +96,10 @@ async function checkSite(item) {
       }
     }
     handleError(error, `#${item.issue_number} Error checking site ${url}`);
-    return { status: config.base.site_status.error };
+    checkResult.valid = false;
+    checkResult.label = config.base.invalid_labels.unreachable;
   }
+  return checkResult;
 }
 
 async function processData() {
@@ -110,17 +129,9 @@ async function processData() {
           );
           
           let labels = [];
-          switch (result.status) {
-            case config.base.site_status.valid:
-              break;
-            case config.base.site_status.invalid:
-              labels = [...(item.labels.map(label => label.name) || []), config.link_checker.error_labels.invalid];
-              break;
-            case config.base.site_status.error:
-              labels = [...(item.labels.map(label => label.name) || []), config.link_checker.error_labels.unreachable];
-              break;
+          if (result.label) {
+            labels = [...(item.labels.map(label => label.name) || []), result.label];
           }
-          
           labels = [...new Set(labels)];
           await issueManager.updateIssueLabels(item.issue_number, labels);
           logger('info', `Finished checking site for issue #${item.issue_number}, result: ${JSON.stringify(result)}`);

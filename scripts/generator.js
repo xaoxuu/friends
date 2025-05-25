@@ -37,8 +37,7 @@ async function getIssues() {
     // 过滤黑名单标签的 issues
     const blacklistLabels = [
       ...(config.generator.exclude_labels || []),
-      ...Object.values(config.theme_checker.error_labels || {}),
-      ...Object.values(config.link_checker.error_labels || {})
+      ...Object.values(config.base.invalid_labels || {})
     ];
     const filteredIssues = issues.filter(issue => {
       const issueLabels = issue.labels.map(label => label.name);

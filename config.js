@@ -4,11 +4,15 @@ export const config = {
   base: {
     // 调试仓库地址（线上使用请设置为空）
     debug_repo: 'xaoxuu/friends',
-    // 网站状态枚举值
-    site_status: {
-      valid: 'valid',
-      invalid: 'invalid',
-      error: 'error'
+    // 有效状态（会被生成到数据文件中）
+    valid_labels: {
+      unknown: '未知', // 无法判断（403，可能是反爬虫机制造成）
+      redirect: '重定向' // 重定向
+    },
+    // 无效状态（不会被生成到数据文件中）
+    invalid_labels: {
+      invalid_theme: '主题无效',
+      unreachable: '无法访问' // 无法访问（404或其它无法访问的状态码）
     },
     // 数据文件存储路径
     // 用于存储解析后的网站数据
@@ -46,12 +50,7 @@ export const config = {
     // 目标链接
     // 检查网站是否包含此链接
     targetLink: 'https://xaoxuu.com',
-    // 异常Issue标签配置
-    // 用于标识网站的不同状态
-    error_labels: {
-      invalid: '未添加友链',
-      unreachable: '无法访问'
-    },
+    
   },
 
   // 主题检查器配置
@@ -76,12 +75,6 @@ export const config = {
     // 主题内容属性名
     content_attr: 'content',
 
-    // Issue标签配置
-    // 用于标识网站的不同状态
-    error_labels: {
-      invalid: '无效站点',
-      unreachable: '无法访问'
-    },
   },
 
   // 网络请求配置

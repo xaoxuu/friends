@@ -5,6 +5,7 @@ import { logger, handleError, withRetry, ConcurrencyPool, IssueManager } from '.
 
 async function checkSite(item) {
   const url = item.url;
+  var checkResult = { valid: false };
   try {
     // 动态延时策略
     const { min, max } = config.request.delay;
@@ -26,6 +27,25 @@ async function checkSite(item) {
       headers: headers,
       validateStatus: status => status < 500 // 允许除500以外的状态码
     });
+    logger('info', `#${item.issue_number} Checked site: ${url} status: ${response.status}`);
+    switch (response.status) {
+      case 200:
+        checkResult.valid = true;
+        break;
+      case 301:
+        checkResult.valid = true;
+        checkResult.label = config.base.valid_labels.redirect;
+        break;
+      case 403:
+        // 如果状态码为 403，可能是由于反爬机制
+        checkResult.valid = true;
+        checkResult.label = config.base.valid_labels.unknown;
+        break;
+      default:
+        checkResult.valid = false;
+        checkResult.label = config.base.invalid_labels.unreachable;
+        break;
+    }
     const $ = cheerio.load(response.data);
     const themeMetaTag = $(config.theme_checker.meta_tag);
     
@@ -46,7 +66,9 @@ async function checkSite(item) {
       const themeVersion = themeMetaTag.attr(config.theme_checker.version_attr) || extractVersion(content);
       
       if (themeName === config.theme_checker.theme_name || (content && themeVersion)) {
-        return { status: config.base.site_status.valid, version: themeVersion };
+        checkResult.valid = true;
+        checkResult.label = themeVersion;
+        return checkResult;
       }
     }
     
@@ -54,13 +76,14 @@ async function checkSite(item) {
     const altThemeMetaTag = $(`meta[name="${config.theme_checker.theme_name}"]`);
     if (altThemeMetaTag.length > 0) {
       const content = altThemeMetaTag.attr('content');
-      const version = extractVersion(content);
-      if (version) {
-        return { status: config.base.site_status.valid, version };
+      const themeVersion = extractVersion(content);
+      if (themeVersion) {
+        checkResult.valid = true;
+        checkResult.label = themeVersion;
+        return checkResult;
       }
     }
     
-    return { status: config.base.site_status.invalid };
   } catch (error) {
     // 针对特定错误类型进行处理
     if (error.response) {
@@ -71,8 +94,10 @@ async function checkSite(item) {
       }
     }
     handleError(error, `#${item.issue_number} Error checking site ${url}`);
-    return { status: config.base.site_status.error };
+    checkResult.ok = false;
+    checkResult.label = config.base.invalid_labels.unreachable;
   }
+  return checkResult;
 }
 
 async function processData() {
@@ -97,24 +122,17 @@ async function processData() {
         try {
           logger('info', `#${item.issue_number} Checking site: ${item.url}`);
           const checkSiteWithRetry = () => checkSite(item);
-          const result = await withRetry(checkSiteWithRetry, config.theme_checker.retry_times);
+          const checkResult = await withRetry(checkSiteWithRetry, config.theme_checker.retry_times);
           
           let labels = [];
-          switch (result.status) {
-            case config.base.site_status.valid:
-              labels = [`${result.version}`];
-              break;
-            case config.base.site_status.invalid:
-              labels = [...(item.labels.map(label => label.name) || []), config.theme_checker.error_labels.invalid];
-              break;
-            case config.base.site_status.error:
-              labels = [...(item.labels.map(label => label.name) || []), config.theme_checker.error_labels.unreachable];
-              break;
+          if (checkResult.valid) {
+            labels = [`${checkResult.label}`];
+          } else {
+            labels = [...(item.labels.map(label => label.name) || []), checkResult.label];
           }
-          
           labels = [...new Set(labels)];
           await issueManager.updateIssueLabels(item.issue_number, labels);
-          logger('info', `Finished checking site for issue #${item.issue_number}, result: ${JSON.stringify(result)}`);
+          logger('info', `Finished checking site for issue #${item.issue_number}, checkResult: ${JSON.stringify(checkResult)}`);
         } catch (error) {
           errors.push({ issue: item.issue_number, url: item.url, error: error.message });
           logger('error', `#${item.issue_number} Error processing site ${item.url} ${error.message}`);
