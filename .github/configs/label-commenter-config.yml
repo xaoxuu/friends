@@ -1,8 +1,8 @@
 # .github/configs/label-commenter-config.yml
 
 labels:
-  - name: 'active'
-    labeled:
+  - name: '审核中'
+    unlabeled:
       issue:
         body: |
           **🎉 恭喜，友链添加成功！**
