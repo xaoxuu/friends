@@ -3,7 +3,7 @@ name: Generator
 on:
   push:
   issues:
-    types: [opened, edited]
+    types: [opened, edited, labeled, unlabeled]
 
 jobs:
   generate:
