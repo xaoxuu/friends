@@ -128,13 +128,11 @@ async function processData() {
             config.request.retry_times
           );
           
-          let labels = [];
           if (result.label) {
-            labels = [...(item.labels.map(label => label.name) || []), result.label];
+            let labels = [...(item.labels.map(label => label.name) || []), result.label];
+            await issueManager.updateIssueLabels(item.issue_number, labels);
+            logger('info', `Finished checking site for issue #${item.issue_number}, result: ${JSON.stringify(result)}`);
           }
-          labels = [...new Set(labels)];
-          await issueManager.updateIssueLabels(item.issue_number, labels);
-          logger('info', `Finished checking site for issue #${item.issue_number}, result: ${JSON.stringify(result)}`);
         } catch (error) {
           errors.push({ issue: item.issue_number, url: item.url, error: error.message });
           logger('error', `#${item.issue_number} Error processing site ${item.url} ${error.message}`);
