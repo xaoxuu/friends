@@ -127,12 +127,12 @@ async function processData() {
             () => checkSite(item),
             config.request.retry_times
           );
-          var labels = item.labels.map(label => label.name) || [];
+          var labels = [...new Set(item.labels.map(label => label.name) || [])];
           if (result.valid) {
-            // 移除无法访问的标签
-            labels = labels.filter(label => !config.base.invalid_labels[label]);
+            // 移除invalid_labels标签
+            labels = labels.filter(label => !Object.values(config.base.invalid_labels).includes(label));
           }
-          if (result.label) {
+          if (result.label && !labels.includes(result.label)) {
             labels = [...labels, result.label];
           }
           await issueManager.updateIssueLabels(item.issue_number, labels);
