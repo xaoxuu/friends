@@ -10,6 +10,8 @@ async function checkLinkInPage(url, headers, targetLink) {
     headers: headers,
     validateStatus: status => status < 500
   });
+  // 等待10秒，让异步内容加载完成
+  await new Promise(resolve => setTimeout(resolve, 10000));
   const $ = cheerio.load(response.data);
   const links = $('a').map((_, el) => $(el).attr('href')).get();
   return links.some(link => {
