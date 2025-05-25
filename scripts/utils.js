@@ -84,7 +84,8 @@ export class IssueManager {
         repo,
         state: 'open',
         per_page: 100,
-        sort: config.generator.sort || 'updated'
+        sort: 'created',
+        direction: 'desc'
       });
       
       // 过滤掉包含 exclude_labels 中定义的标签的 Issue
