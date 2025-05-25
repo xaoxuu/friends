@@ -29,9 +29,13 @@ export const config = {
   generator: {
     // 是否启用生成器
     enabled: true,
+    
     // Issue排序方式
-    // updated-desc: 按最后更新时间降序
-    sort: 'updated-desc',
+    // updated/created: 更新时间/创建时间
+    sort: 'created',
+    // desc/asc: 降序/升序
+    direction: 'desc',
+    
     // 需要排除的Issue标签
     // 包含这些标签的Issue将不会被解析
     exclude_labels: ["审核中"],

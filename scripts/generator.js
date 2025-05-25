@@ -19,14 +19,8 @@ async function getIssues() {
   };
 
   // 添加排序
-  if (config.generator.sort === 'updated-desc') {
-    params.sort = 'updated';
-    params.direction = 'desc';
-  } else {
-    // 默认按创建时间排序
-    params.sort = 'created';
-    params.direction = 'desc';
-  }
+  params.sort = config.generator.sort;
+  params.direction = config.generator.direction;
 
   try {
     const issues = [];
