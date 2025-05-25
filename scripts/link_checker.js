@@ -107,7 +107,11 @@ async function processData() {
 
   try {
     const issueManager = new IssueManager();
-    const validSites = await issueManager.getIssues(config.link_checker);
+    const validSites = await issueManager.getIssues({
+      exclude_labels: config.link_checker.exclude_labels,
+      include_keyword: config.link_checker.include_keyword
+    });
+    logger('info', `Total sites to check: ${validSites.length}`);
     let errors = [];
     
     // 创建并发控制池，最大并发数为 5
@@ -135,6 +139,7 @@ async function processData() {
           
           labels = [...new Set(labels)];
           await issueManager.updateIssueLabels(item.issue_number, labels);
+          logger('info', `Finished checking site for issue #${item.issue_number}, result: ${JSON.stringify(result)}`);
         } catch (error) {
           errors.push({ issue: item.issue_number, url: item.url, error: error.message });
           logger('error', `#${item.issue_number} Error processing site ${item.url} ${error.message}`);
