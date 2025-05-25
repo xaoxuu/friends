@@ -17,7 +17,7 @@ body:
         - required: false
           label: 博客已运行至少半年，非刚搭建好。
         - required: false
-          label: 先友后链：与 xaoxuu 有至少**半年**的有效互动。
+          label: 先友后链：与 xaoxuu 有至少**半年**的双向有效互动。
   - type: textarea
     id: config-file
     validations:
