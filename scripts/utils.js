@@ -78,15 +78,14 @@ export class IssueManager {
     const [owner, repo] = (config.base.debug_repo || process.env.GITHUB_REPOSITORY).split('/');
     
     try {
-      const issues = [];
-      for await (const response of this.octokit.paginate.iterator(this.octokit.issues.listForRepo, {
+      // 使用 paginate 方法一次性获取所有 issues
+      const issues = await this.octokit.paginate(this.octokit.issues.listForRepo, {
         owner,
         repo,
         state: 'open',
-        per_page: 100
-      })) {
-        issues.push(...response.data);
-      }
+        per_page: 100,
+        sort: config.generator.sort || 'updated'
+      });
       
       // 过滤掉包含 exclude_labels 中定义的标签的 Issue
       const filteredIssues = issues.filter(issue => {
