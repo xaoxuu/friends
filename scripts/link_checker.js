@@ -67,8 +67,9 @@ async function checkSite(item) {
       headers: headers,
       validateStatus: status => status < 500
     });
-    logger('info', `#${item.issue_number} Checked site: ${url}, status: ${response.status}`);
+    logger('info', `#${item.issue_number} Checked site: ${url} status: ${response.status}`);
     // 如果状态码为 403，可能是由于反爬机制，直接返回 invalid 状态
+    return { status: config.base.site_status.valid };
   } catch (error) {
     if (error.response) {
       if (error.response.status === 403) {
