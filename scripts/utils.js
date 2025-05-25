@@ -87,7 +87,7 @@ export class IssueManager {
         sort: 'created',
         direction: 'desc'
       });
-      
+      logger('info', `Fetched ${issues.length} issues`, issues.map(item => item.number).join(','));
       // 过滤掉包含 exclude_labels 中定义的标签的 Issue
       const filteredIssues = issues.filter(issue => {
         const issueLabels = issue.labels.map(label => label.name);
@@ -100,6 +100,7 @@ export class IssueManager {
         return issue.body?.includes(filterConfig.include_keyword);
       });
       
+      logger('info', `Filtered ${issues.length}`, keywordFilteredIssues.map(item => item.number).join(','));
       return keywordFilteredIssues.map(issue => ({
         url: issue.body?.match(/"url":\s*"([^"]+)"/)?.at(1),
         issue_number: issue.number,
