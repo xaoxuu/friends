@@ -2,8 +2,8 @@ name: Feed Posts Parser
 
 on:
   workflow_dispatch: # Allows manual triggering
-  # schedule:
-  #   - cron: '0 5 * * *' # Runs daily at 5 AM UTC
+  schedule:
+    - cron: '0 21 * * *' # Runs daily at 21:00 UTC
 
 jobs:
   feed-parser:
