@@ -24,12 +24,16 @@ jobs:
       # 检查链接状态
       - name: Check Reachability
         uses: xaoxuu/links-checker@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           checker: 'reachability'
           exclude_labels: '审核中, 白名单, 缺少互动, 缺少文章' # 具有哪些标签的issue不进行检查
       # 检查完毕后重新生成一下JSON
       - name: Generate data.json
         uses: xaoxuu/issues2json@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           data_version: 'v2'
           data_path: '/v2/data.json'
