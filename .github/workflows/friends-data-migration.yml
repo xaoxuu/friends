@@ -1,0 +1,15 @@
+name: friends-data-migration
+
+on:
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  friends-data-migration:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: friends-data-migration
+        uses: xaoxuu/friends-data-migration@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this as is, it's automatically generated
