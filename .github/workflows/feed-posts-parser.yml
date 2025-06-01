@@ -30,7 +30,7 @@ jobs:
         with:
           data_version: 'v2'
           data_path: '/v2/data.json'
-          sort: 'created-desc' # 'created-desc'/'created-asc'/'updated-desc'/'updated-asc'
+          sort: 'posts-desc' # 'created-desc'/'created-asc'/'updated-desc'/'updated-asc'
           exclude_labels: '审核中, 无法访问, 缺少互动, 缺少文章, 风险网站' # 具有哪些标签的issue不生成到JSON中
       - name: Setup Git Config
         run: |
