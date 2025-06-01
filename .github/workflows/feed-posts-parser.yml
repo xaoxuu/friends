@@ -3,25 +3,35 @@ name: Feed Posts Parser
 on:
   workflow_dispatch: # Allows manual triggering
   schedule:
-    - cron: '0 21 * * *' # Runs daily at 21:00 UTC
+    - cron: '0 21 * * *' # Runs daily at 21:00
 
 jobs:
   feed-parser:
     runs-on: ubuntu-latest
     permissions:
+      issues: write
       contents: write
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          ref: output
-      - name: Run Feed Post Parser Action
+      - name: Run Feed Post Parser
         uses: xaoxuu/feed-posts-parser@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           data_path: 'v2/data.json'
           posts_count: '2'
           date_format: 'YYYY-MM-DD HH:mm'
-      # 更新完毕后提交一下
+      # 重新生成一下JSON
+      - name: Generate data.json
+        uses: xaoxuu/issues2json@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          data_version: 'v2'
+          data_path: '/v2/data.json'
+          sort: 'created-desc' # 'created-desc'/'created-asc'/'updated-desc'/'updated-asc'
+          exclude_labels: '审核中, 无法访问, 缺少互动, 缺少文章, 风险网站' # 具有哪些标签的issue不生成到JSON中
       - name: Setup Git Config
         run: |
           git config --global user.name 'github-actions[bot]'
