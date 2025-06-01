@@ -1,0 +1,35 @@
+name: Feed Posts Parser
+
+on:
+  workflow_dispatch: # Allows manual triggering
+  # schedule:
+  #   - cron: '0 5 * * *' # Runs daily at 5 AM UTC
+
+jobs:
+  feed-parser:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: output
+      - name: Run Feed Post Parser Action
+        uses: xaoxuu/feed-posts-parser@main
+        with:
+          data_path: 'v2/data.json'
+          posts_count: '2'
+          date_format: 'YYYY-MM-DD HH:mm'
+      # 更新完毕后提交一下
+      - name: Setup Git Config
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+      - name: Commit and Push to output branch
+        run: |
+          git fetch origin output || true
+          git checkout -B output
+          git add --all
+          git commit -m "Update data from issues" || echo "No changes to commit"
+          git push -f origin output
