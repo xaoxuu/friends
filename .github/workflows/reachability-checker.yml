@@ -4,7 +4,7 @@ name: Reachability Checker
 on:
   issues:
     # 新增（打开）/编辑/关闭/重新打开/设置标签/移除标签
-    types: [opened, edited, closed, reopened, labeled, unlabeled]
+    types: [opened, closed, reopened, labeled, unlabeled]
   # 手动触发
   workflow_dispatch:
 
