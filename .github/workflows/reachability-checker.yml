@@ -1,0 +1,48 @@
+name: Reachability Checker
+
+# Controls when the workflow will run
+on:
+  issues:
+    # 新增（打开）/编辑/关闭/重新打开/设置标签/移除标签
+    types: [opened, edited, closed, reopened, labeled, unlabeled]
+  # 手动触发
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  reachability-checker:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      # 检查链接状态
+      - name: Check Reachability
+        uses: xaoxuu/links-checker@main
+        with:
+          checker: 'reachability'
+          exclude_labels: '审核中, 白名单, 缺少互动, 缺少文章' # 具有哪些标签的issue不进行检查
+      # 检查完毕后重新生成一下JSON
+      - name: Generate data.json
+        uses: xaoxuu/issues2json@main
+        with:
+          data_version: 'v2'
+          data_path: '/v2/data.json'
+          sort: 'created-desc' # 'created-desc'/'created-asc'/'updated-desc'/'updated-asc'
+          exclude_labels: '审核中, 无法访问, 缺少互动, 缺少文章, 风险网站' # 具有哪些标签的issue不生成到JSON中
+      - name: Setup Git Config
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+      - name: Commit and Push to output branch
+        run: |
+          git fetch origin output || true
+          git checkout -B output
+          git add --all
+          git commit -m "Update data from issues" || echo "No changes to commit"
+          git push -f origin output
