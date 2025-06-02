@@ -1,4 +1,4 @@
-name: friends-data-migration
+name: Data Migration
 
 on:
   workflow_dispatch: # Allows manual triggering
