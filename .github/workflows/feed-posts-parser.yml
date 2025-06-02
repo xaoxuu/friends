@@ -19,7 +19,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          data_path: 'v2/data.json'
+          data_path: '/v2/data.json'
           posts_count: 1
           date_format: 'YYYY-MM-DD HH:mm'
       # 重新生成一下JSON
