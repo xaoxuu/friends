@@ -1,7 +1,7 @@
 name: Data Migration
 
 on:
-  workflow_dispatch: # Allows manual triggering
+  workflow_dispatch: # 仅需数据格式升级的时候手动执行一次即可
 
 jobs:
   friends-data-migration:
