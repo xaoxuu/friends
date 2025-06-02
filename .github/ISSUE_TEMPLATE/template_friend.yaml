@@ -33,7 +33,7 @@ body:
         - icon: 网站图标
         - screenshot: 网站截图
         - description: 一句话简介
-        - rss: 订阅地址（抓取并显示最新文章）
+        - feed: 订阅地址（抓取并显示最新文章）
         -->
         
         ```json
@@ -43,7 +43,7 @@ body:
             "icon": "",
             "screenshot": "",
             "description": "",
-            "rss": ""
+            "feed": ""
         }
         ```
 
