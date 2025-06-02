@@ -28,7 +28,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           checker: 'reachability'
-          unreachable_label: '暂时失联'
+          unreachable_label: '失联'
           exclude_issue_with_labels: '审核中, 白名单, 缺少互动, 缺少文章' # 具有哪些标签的issue不进行检查
       # 检查完毕后重新生成一下JSON
       - name: Generate data.json
