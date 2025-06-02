@@ -11,35 +11,48 @@ body:
         - required: true
           label: 合法的、非营利性、无商业广告、无木马植入。
         - required: false
-          label: 有实质性原创内容的 HTTPS 站点，发布过至少 5 篇原创文章，内容题材不限。
+          label: 有实质性原创内容的 HTTPS 站点，发布过至少 10 篇原创文章，内容题材不限。
         - required: false
           label: 有独立域名，非免费域名。
         - required: false
           label: 博客已运行至少半年，非刚搭建好。
         - required: false
-          label: 先友后链：与 xaoxuu 有至少**半年**的双向有效互动。
+          label: 先友后链：与博主有至少**半年**的双向有效互动，例如互相留言评论、issue、PR等。
   - type: textarea
-    id: config-file
+    id: json-data
     validations:
       required: true
     attributes:
       label: 友链信息
       description: 请在双引号中填写，不要修改格式。
       value: |
+        <!--
+        请在下方的 `JSON` 块中填写，字段说明：
+        - title: 友链标题
+        - url: 友链地址
+        - icon: 网站图标
+        - screenshot: 网站截图
+        - description: 一句话简介
+        - rss: 订阅地址（抓取并显示最新文章）
+        -->
+        
         ```json
         {
             "title": "",
             "url": "",
-            "avatar": "",
+            "icon": "",
             "screenshot": "",
-            "description": ""
+            "description": "",
+            "rss": ""
         }
         ```
+
+        
   - type: input
     id: friends-html
     attributes:
       label: 友链地址
-      description: 请输入您的友链页面地址。
+      description: 请输入您的友链页面地址，用于 Actions 自动检测。
       placeholder: "如: https://xaoxuu.com/friends/"
     validations:
       required: true
@@ -47,5 +60,5 @@ body:
     id: friends-repo
     attributes:
       label: 友链仓库（可选）
-      description: 如果您使用 issue 作为友链源，请附上 issue 仓库链接。
+      description: 如果您使用 issue 作为友链源，请附上 issue 仓库链接，博主将会前往您的仓库自行填写友链。
       placeholder: "如: https://github.com/xaoxuu/friends/"
