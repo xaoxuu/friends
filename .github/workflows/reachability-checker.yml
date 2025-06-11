@@ -7,6 +7,9 @@ on:
     types: [opened, closed, reopened, labeled, unlabeled]
   # 手动触发
   workflow_dispatch:
+  # 每天凌晨4点运行一次
+  schedule:
+    - cron: '0 20 * * *'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
