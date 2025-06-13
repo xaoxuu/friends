@@ -16,3 +16,14 @@
 **如何提交意向申请？**
 
 按照 [Issue 模板](https://github.com/xaoxuu/friends/issues/new/choose) 内容填写并提交，当条件均达成后，博主会通过审核，通过后稍等片刻即可在友链页面看到您的友链。
+
+**本站信息**
+
+当你添加本站友链时，建议复制以下信息：
+
+```yaml
+title: xaoxuu
+url: https://xaoxuu.com
+avatar: https://xaoxuu.com/assets/xaoxuu/2021/09/24/2f74810ceb3d3.png
+screenshot: https://xaoxuu.com/assets/xaoxuu/2022/10/23/63542895cfd29.png
+```
