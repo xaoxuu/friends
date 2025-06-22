@@ -1,23 +1,23 @@
 name: 友链模板
-description: 自助添加友链。
+description: 提交友链意向申请。
 labels: ['审核中']
 body:
   - type: checkboxes
     id: checks
     attributes:
       label: 检查清单
-      description: 请认真检查以下清单中的每一项，并在相符的项前打勾。（在满足所有条件后才会通过，不满足的项请不要勾选）
+      description: 请认真检查以下清单中的每一项，并在相符的项前打勾。（在真实满足所有条件后才会通过，不满足的项请不要勾选）
       options:
         - required: true
           label: 合法的、非营利性、无商业广告、无木马植入。
         - required: false
           label: 有实质性原创内容的 HTTPS 站点，发布过至少 10 篇原创文章，内容题材不限。
         - required: false
-          label: 有独立域名，非免费域名。
+          label: 有独立域名，非免费域名。（在真实满足后才会通过，不满足时请不要勾选）
         - required: false
-          label: 博客已运行至少半年，非刚搭建好。
+          label: 博客已运行至少1年，非刚搭建好。（在真实满足后才会通过，不满足时请不要勾选）
         - required: false
-          label: 先友后链：与博主有至少**半年**的双向有效互动，例如互相留言评论、issue、PR等。
+          label: 先友后链：与博主有至少**1年**的双向有效互动，例如互相留言评论、issue、PR等。（在真实满足后才会通过，不满足时请不要勾选）
   - type: textarea
     id: json-data
     validations:
@@ -31,9 +31,9 @@ body:
         - title: 友链标题
         - url: 友链地址
         - icon: 网站图标
-        - screenshot: 网站截图
+        - snapshot: 网站截图
         - description: 一句话简介
-        - feed: 订阅地址（抓取并显示最新文章）
+        - feed: 订阅地址（抓取并显示最新文章，没有 feed 地址时，排序会靠后）
         -->
         
         ```json
@@ -41,7 +41,7 @@ body:
             "title": "",
             "url": "",
             "icon": "",
-            "screenshot": "",
+            "snapshot": "",
             "description": "",
             "feed": ""
         }
@@ -52,7 +52,7 @@ body:
     id: friends-html
     attributes:
       label: 友链地址
-      description: 请输入您的友链页面地址，用于 Actions 自动检测。
+      description: 请输入您的友链页面地址，用于人工审核和 GitHub Actions 自动检测。（不必提前添加本站为友链，审核通过后再添加也不迟。）
       placeholder: "如: https://xaoxuu.com/friends/"
     validations:
       required: true
