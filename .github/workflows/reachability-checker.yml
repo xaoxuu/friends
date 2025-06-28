@@ -32,17 +32,15 @@ jobs:
         with:
           checker: 'reachability'
           unreachable_label: '失联'
-          exclude_issue_with_labels: '审核中, 白名单, 缺少互动, 缺少文章' # 具有哪些标签的issue不进行检查
+          exclude_issue_with_labels: '审核中, 白名单' # 具有哪些标签的issue不进行检查
       # 检查完毕后重新生成一下JSON
       - name: Generate data.json
         uses: xaoxuu/issues2json@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          data_version: 'v2'
-          data_path: '/v2/data.json'
-          sort: 'posts-desc' # created-desc/created-asc/updated-desc/updated-asc/version-desc/posts-desc
-          exclude_issue_with_labels: '审核中, 缺少互动, 缺少文章, 风险网站' # 具有哪些标签的issue不生成到JSON中
+          sort: 'posts-desc'
+          exclude_issue_with_labels: '审核中, 风险网站' # 具有哪些标签的issue不生成到JSON中
           hide_labels: '白名单' # 这些标签不显示在前端页面
       - name: Setup Git Config
         run: |
