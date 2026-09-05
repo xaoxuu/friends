@@ -1,0 +1,1259 @@
+{
+  "version": "v2",
+  "content": [
+    {
+      "title": "LineXic书屋",
+      "url": "https://www.linexic.top",
+      "icon": "https://cn.cravatar.com/avatar/ad6c462d000be54889b98f669fd56a64?s=256",
+      "screenshot": "https://img.linexic.top/file/vf2Z7Mkg.png",
+      "description": "难离难舍，想抱紧些",
+      "feed": "https://www.linexic.top/rss.xml",
+      "posts": [
+        {
+          "title": "月记 16:我的八月",
+          "link": "https://www.linexic.top/post/mothly-16-my-aug/",
+          "published": "2026-09-05 08:00"
+        },
+        {
+          "title": "Ungoogled Chromium 初体验安装",
+          "link": "https://www.linexic.top/post/ungoogled-chromium-install/",
+          "published": "2026-08-12 08:00"
+        },
+        {
+          "title": "最近迷上了织围巾",
+          "link": "https://www.linexic.top/post/zhi-mao-yi/",
+          "published": "2026-08-04 08:00"
+        }
+      ],
+      "issue_number": 150,
+      "labels": []
+    },
+    {
+      "title": "风记星辰",
+      "url": "https://www.thyuu.com",
+      "icon": "https://std.thyuu.com/logo.svg",
+      "screenshot": "",
+      "description": "热爱你来过的每度温暖",
+      "feed": "https://www.thyuu.com/feed/",
+      "posts": [
+        {
+          "title": "风记得的音乐：以三首钢琴曲告别这个夏天吧",
+          "link": "https://www.thyuu.com/82051/",
+          "published": "2026-09-03 10:06"
+        },
+        {
+          "title": "THYUU/星度主题 26.7.0 小暑版本更新内容：主题地图源引来天地图和 Mapbox、站点特写迎来交互升级，瞬间动态浏览更流畅",
+          "link": "https://www.thyuu.com/82351/",
+          "published": "2026-06-01 16:47"
+        },
+        {
+          "title": "风记得的音乐：《行将近》—— Soon to Leave",
+          "link": "https://www.thyuu.com/82442/",
+          "published": "2026-05-09 18:26"
+        }
+      ],
+      "issue_number": 146,
+      "labels": []
+    },
+    {
+      "title": "Jake Blog",
+      "url": "https://jaketao.com/blog/",
+      "description": "一个爱折腾的硅谷创业者，技术开发、主机游戏、跨境电商、留学旅居",
+      "icon": "https://jaketao.com/wp-content/uploads/2026/02/logobg.jpg",
+      "snapshot": "https://jaketao.com/wp-content/uploads/2021/01/WX20210101-224318@2x.png",
+      "feed": "https://jaketao.com/feed",
+      "posts": [
+        {
+          "title": "OwlVigil 开源SDK：一套SDK轻松接入完整的 AI 管控能力",
+          "link": "https://jaketao.com/owlvigil-go-sdk-open-source",
+          "published": "2026-09-03 04:15"
+        },
+        {
+          "title": "Syrovex的这两个月 – OwlVigil上线 & 融资正式启动",
+          "link": "https://jaketao.com/syrovex-two-months",
+          "published": "2026-08-27 15:13"
+        },
+        {
+          "title": "从一次模型调用到生产治理：OwlVigil Go SDK 实战",
+          "link": "https://jaketao.com/owlvigil-sdk-practices",
+          "published": "2026-08-26 01:24"
+        }
+      ],
+      "issue_number": 73,
+      "labels": []
+    },
+    {
+      "title": "MHuiG",
+      "url": "https://blog.mhuig.top",
+      "description": "Be Yourself, Make a Difference.",
+      "icon": "https://bu.dusays.com/2022/10/23/63552e00b1e60.png",
+      "snapshot": "https://i.loli.net/2020/08/22/d24zpPlhLYWX6D1.png",
+      "feed": "https://blog.mhuig.top/atom.xml",
+      "posts": [
+        {
+          "title": "炒饺子",
+          "link": "https://blog.mhuig.top/p/6edbaac7/",
+          "published": "2026-08-29 15:05"
+        },
+        {
+          "title": "OKR目标管理中的七成完成度现象及其博弈论分析",
+          "link": "https://blog.mhuig.top/p/b150f6f2/",
+          "published": "2026-08-16 09:50"
+        },
+        {
+          "title": "空白的答案",
+          "link": "https://blog.mhuig.top/p/cb3fc42/",
+          "published": "2026-05-05 11:51"
+        }
+      ],
+      "issue_number": 49,
+      "labels": [
+        {
+          "name": "社区先锋",
+          "color": "bbded6",
+          "hue": 166,
+          "saturation": 35,
+          "lightness": 80
+        },
+        {
+          "name": "老友",
+          "color": "228879",
+          "hue": 171,
+          "saturation": 60,
+          "lightness": 33
+        }
+      ]
+    },
+    {
+      "title": "频率",
+      "url": "https://pinlyu.com",
+      "description": "风卷过的起点",
+      "keywords": "",
+      "icon": "https://gcore.jsdelivr.net/gh/cdn-x/xaoxuu@main/posts/20250706181408868.webp",
+      "snapshot": "",
+      "feed": "https://pinlyu.com/feed/",
+      "posts": [
+        {
+          "title": "欢迎来龙餐馆：烟火人间，好好吃饭",
+          "link": "https://pinlyu.com/culture/movie-loong-restaurant/",
+          "published": "2026-08-24 02:30"
+        },
+        {
+          "title": "塘朗山深云瀑布打卡",
+          "link": "https://pinlyu.com/life/shenyun-waterfall/",
+          "published": "2026-08-16 12:49"
+        },
+        {
+          "title": "第一次打匹克球",
+          "link": "https://pinlyu.com/moments/first-time-pickleball/",
+          "published": "2026-08-12 08:31"
+        }
+      ],
+      "issue_number": 92,
+      "labels": []
+    },
+    {
+      "title": "1900'Blog",
+      "url": "https://1900.live",
+      "icon": "https://gcore.jsdelivr.net/gh/cdn-x/xaoxuu@main/posts/20250706180540021.png",
+      "screenshot": "",
+      "description": "All work and no play makes Jack a dull boy",
+      "feed": "https://1900.live/rss/",
+      "posts": [
+        {
+          "title": "290、处暑",
+          "link": "https://1900.live/290-chu-shu/",
+          "published": "2026-08-23 09:48"
+        },
+        {
+          "title": "289、立秋",
+          "link": "https://1900.live/289-li-qiu/",
+          "published": "2026-08-07 12:20"
+        },
+        {
+          "title": "288、大暑",
+          "link": "https://1900.live/288-da-shu/",
+          "published": "2026-07-23 15:55"
+        }
+      ],
+      "issue_number": 148,
+      "labels": []
+    },
+    {
+      "title": "Felix Chen",
+      "url": "https://blog.snowflake.zone/",
+      "description": "所见一切皆是奇迹",
+      "icon": "https://gcore.jsdelivr.net/gh/cdn-x/xaoxuu@main/posts/20250706180805485.webp",
+      "snapshot": "",
+      "feed": "https://blog.snowflake.zone/friends/atom.xml",
+      "posts": [
+        {
+          "title": "从PPO到GEPO：大模型强化学习中的组策略优化演进",
+          "link": "https://blog.snowflake.zone/posts/30/",
+          "published": "2026-08-19 22:07"
+        },
+        {
+          "title": "Beta分布：缘由及推导",
+          "link": "https://blog.snowflake.zone/posts/29/",
+          "published": "2025-07-09 22:00"
+        },
+        {
+          "title": "强化学习：基本概念和优化目标",
+          "link": "https://blog.snowflake.zone/posts/28/",
+          "published": "2025-07-06 18:50"
+        }
+      ],
+      "issue_number": 117,
+      "labels": []
+    },
+    {
+      "title": "W4J1e's blog",
+      "url": "https://hin.cool",
+      "description": "总是偏爱不务正业",
+      "keywords": "W4J1e",
+      "icon": "https://gcore.jsdelivr.net/gh/cdn-x/xaoxuu@main/posts/20250706180654686.webp",
+      "snapshot": "https://bu.dusays.com/2021/02/04/6be1a2bcc0fea.jpg",
+      "feed": "https://hin.cool/atom.xml",
+      "posts": [
+        {
+          "title": "轻量翻译申请硅基流动合作与上架",
+          "link": "https://hin.cool/posts/lightransgo.html",
+          "published": "2026-08-17 23:00"
+        },
+        {
+          "title": "九重天拍银河",
+          "link": "https://hin.cool/posts/jiuchongtiangalaxy.html",
+          "published": "2026-08-13 16:10"
+        },
+        {
+          "title": "处理生后事的一个月",
+          "link": "https://hin.cool/posts/byebyemyfather.html",
+          "published": "2026-07-28 22:00"
+        }
+      ],
+      "issue_number": 81,
+      "labels": []
+    },
+    {
+      "title": "xaoxuu",
+      "url": "https://xaoxuu.com",
+      "description": "For all time, always.",
+      "icon": "https://res.xaox.cc/gh/cdn-x/xaoxuu@main/avatar/2025.webp",
+      "snapshot": "https://bu.dusays.com/2022/10/23/63542895cfd29.png",
+      "feed": "https://xaoxuu.github.io/atom.xml",
+      "posts": [
+        {
+          "title": "Stellar 为什么没能进入 Hexo 主题头部",
+          "link": "https://xaoxuu.com/blog/20260815/",
+          "published": "2026-08-15 02:14"
+        },
+        {
+          "title": "梦境：无法定格的偶遇",
+          "link": "https://xaoxuu.com/blog/20260801/",
+          "published": "2026-08-01 15:24"
+        },
+        {
+          "title": "连续两个晚上做梦笑醒",
+          "link": "https://xaoxuu.com/blog/20260226/",
+          "published": "2026-02-26 20:00"
+        }
+      ],
+      "issue_number": 1,
+      "labels": [
+        {
+          "name": "本站博主",
+          "color": "0E8A16",
+          "hue": 124,
+          "saturation": 82,
+          "lightness": 30
+        }
+      ]
+    },
+    {
+      "title": "SkyReeves",
+      "url": "https://skyreeves.com",
+      "icon": "https://img.skyreeves.com/main/avatar96.gif",
+      "snapshot": "https://img.skyreeves.com/sites/screenshot.png",
+      "feed": "https://skyreeves.github.io/atom.xml",
+      "posts": [
+        {
+          "title": "200块钱的镜头也能拍摄深空",
+          "link": "https://skyreeves.com/post/265ea4d1/",
+          "published": "2026-07-25 20:55"
+        },
+        {
+          "title": "昨晚终于去拍星空啦",
+          "link": "https://skyreeves.com/post/1b51720f/",
+          "published": "2026-07-13 12:22"
+        },
+        {
+          "title": "将静态页面部署切换到了阿里云OSS",
+          "link": "https://skyreeves.com/post/4f22dd5e/",
+          "published": "2026-07-09 01:17"
+        }
+      ],
+      "issue_number": 105,
+      "labels": []
+    },
+    {
+      "title": "杜老师说",
+      "url": "https://dusays.com",
+      "description": "师者，传道，授业，解惑！",
+      "icon": "https://cdn.dusays.com/avatar.png",
+      "snapshot": "https://bu.dusays.com/2020/11/13/0eccf1ca0dc4b.jpg",
+      "feed": "https://dusays.com/atom.xml",
+      "posts": [
+        {
+          "title": "图床服务故障修复公告",
+          "link": "https://dusays.com/archives/878/",
+          "published": "2026-07-19 00:00"
+        },
+        {
+          "title": "周末的 3 种过法",
+          "link": "https://dusays.com/archives/877/",
+          "published": "2026-07-13 00:00"
+        },
+        {
+          "title": "居家办公 5 个减少分心的动作",
+          "link": "https://dusays.com/archives/876/",
+          "published": "2026-07-07 00:00"
+        }
+      ],
+      "issue_number": 107,
+      "labels": [
+        {
+          "name": "社区先锋",
+          "color": "bbded6",
+          "hue": 166,
+          "saturation": 35,
+          "lightness": 80
+        },
+        {
+          "name": "老友",
+          "color": "228879",
+          "hue": 171,
+          "saturation": 60,
+          "lightness": 33
+        }
+      ]
+    },
+    {
+      "title": "BeaCox",
+      "url": "https://blog.beacox.space",
+      "description": "On the way to be a hacker",
+      "icon": "https://gcore.jsdelivr.net/gh/cdn-x/xaoxuu@main/posts/20250706181532630.png",
+      "snapshot": "",
+      "feed": "https://blog.beacox.space/posts/index.xml",
+      "posts": [
+        {
+          "title": "Why gdb-mcp?",
+          "link": "https://blog.beacox.space/posts/gdb-mcp/",
+          "published": "2026-06-20 12:00"
+        },
+        {
+          "title": "CVE-2024-51023 复现",
+          "link": "https://blog.beacox.space/posts/cve-2024-51023/",
+          "published": "2026-01-01 23:59"
+        },
+        {
+          "title": "Sk2Decompile 论文阅读笔记",
+          "link": "https://blog.beacox.space/posts/sk2decompile/",
+          "published": "2025-10-22 10:00"
+        }
+      ],
+      "issue_number": 119,
+      "labels": []
+    },
+    {
+      "title": "ChrAlpha 的幻想乡",
+      "url": "https://blog.ichr.me",
+      "description": "不硬核瞎折腾",
+      "icon": "https://gcore.jsdelivr.net/npm/ckx@0.0.1/favicon/safari-pinned-tab.svg",
+      "snapshot": "https://bu.dusays.com/2021/01/30/eefea79c845d3.png",
+      "feed": "https://blog.ichr.me/atom.xml",
+      "posts": [
+        {
+          "title": "嵌套 Devcontainer：放心 dangerously skip permissions 无看管 Agent Coding",
+          "link": "https://blog.ichr.me/post/nested-devcontainer-agent-coding/",
+          "published": "2026-05-23 02:30"
+        },
+        {
+          "title": "AI Agent 病毒：从 OpenClaw 病毒式成功到成为病毒",
+          "link": "https://blog.ichr.me/post/ai-agent-virus/",
+          "published": "2026-02-25 22:53"
+        },
+        {
+          "title": "写给非科班的 HPC 无痛上手：在超算节点上使用 VS Code",
+          "link": "https://blog.ichr.me/post/hpc-vscode/",
+          "published": "2025-12-18 23:01"
+        }
+      ],
+      "issue_number": 62,
+      "labels": []
+    },
+    {
+      "title": "Shan San",
+      "url": "https://shansan.top",
+      "description": "",
+      "keywords": "",
+      "icon": "https://gcore.jsdelivr.net/gh/cdn-x/xaoxuu@main/posts/20250706180900122.jpg",
+      "snapshot": "",
+      "feed": "https://shansan.top/rss2.xml",
+      "posts": [
+        {
+          "title": "【连载】Software Testing Weekly 图文解读 with VLM",
+          "link": "https://shansan.top/2026/04/19/Software-Testing-Weekly-Visual-Interpretation/",
+          "published": "2026-04-19 08:45"
+        },
+        {
+          "title": "深入 XRepoTest：如何把 LLM 单元测试生成拉回真实仓库",
+          "link": "https://shansan.top/2026/08/29/xrepotest-deep-dive/",
+          "published": "2026-08-30 02:00"
+        },
+        {
+          "title": "深入 vLLM：从网关请求到 GPU 批处理的推理引擎实现",
+          "link": "https://shansan.top/2026/07/12/vllm-inference-engine-deep-dive/",
+          "published": "2026-07-12 18:30"
+        }
+      ],
+      "issue_number": 8,
+      "labels": [
+        {
+          "name": "老友",
+          "color": "228879",
+          "hue": 171,
+          "saturation": 60,
+          "lightness": 33
+        }
+      ]
+    },
+    {
+      "title": "尼采般地抒情",
+      "url": "https://wztlink1013.com/",
+      "description": "热爱技术更热爱生活",
+      "keywords": "技术博客,生活随笔",
+      "icon": "https://gcore.jsdelivr.net/gh/cdn-x/xaoxuu@main/posts/20250706182800249.png",
+      "snapshot": "https://bu.dusays.com/2021/08/14/a13eb608cfa96.png",
+      "feed": "https://wztlink1013.com/atom.xml",
+      "posts": [
+        {
+          "title": "Vibe Coding 测试体系：API 测试、单元测试与 e2e 测试实战指南",
+          "link": "https://wztlink1013.com/blog/du01ubd0eq85cg62",
+          "published": "2026-04-15 09:38"
+        },
+        {
+          "title": "Cursor编辑器同步VSCode配置",
+          "link": "https://wztlink1013.com/blog/mokx00nsiy3lq2n4",
+          "published": "2026-02-25 17:18"
+        },
+        {
+          "title": "Cursor 使用 Antigravity-Manager 接入 Antigravity 模型",
+          "link": "https://wztlink1013.com/blog/ci2wbmb3xsvfistl",
+          "published": "2026-01-26 18:57"
+        }
+      ],
+      "issue_number": 90,
+      "labels": []
+    },
+    {
+      "title": "Thun888",
+      "url": "https://blog.hzchu.top",
+      "description": "夏日当空，心如深渊",
+      "icon": "https://blog.hzchu.top/img/avatar.webp",
+      "snapshot": "https://onep.hzchu.top/mount/pic/blog-hzchu-top.png",
+      "feed": "https://blog.hzchu.top/atom.xml",
+      "posts": [
+        {
+          "title": "优化实验室网络",
+          "link": "https://blog.hzchu.top/2026/opt-lab-net/",
+          "published": "2026-04-11 21:11"
+        },
+        {
+          "title": "解决一些笔记本电脑更换主板后的问题",
+          "link": "https://blog.hzchu.top/2026/solve-laptop-motherboard-problems/",
+          "published": "2026-02-27 05:18"
+        },
+        {
+          "title": "手动编译耗子面板安装的OpenResty",
+          "link": "https://blog.hzchu.top/2026/haozi-openresty-build/",
+          "published": "2026-02-26 19:41"
+        }
+      ],
+      "issue_number": 137,
+      "labels": [
+        {
+          "name": "社区先锋",
+          "color": "bbded6",
+          "hue": 166,
+          "saturation": 35,
+          "lightness": 80
+        }
+      ]
+    },
+    {
+      "title": "黑石",
+      "url": "https://heson.me",
+      "icon": "https://cn.cravatar.com/avatar/fc2c9b067f65c9e2d7057ba797f7cfca",
+      "snapshot": "",
+      "description": "人生在勤，不索何获",
+      "feed": "https://heson.me/feed/",
+      "posts": [
+        {
+          "title": "丢掉状态洁癖：用“破烂开始法则”练就恐怖执行力",
+          "link": "https://heson.me/life/51.html",
+          "published": "2026-03-22 09:43"
+        },
+        {
+          "title": "关于Windows11激活",
+          "link": "https://heson.me/dowhat/49.html",
+          "published": "2025-10-27 11:39"
+        },
+        {
+          "title": "记录一次memo的调用",
+          "link": "https://heson.me/dowhat/47.html",
+          "published": "2025-10-10 08:54"
+        }
+      ],
+      "issue_number": 160,
+      "labels": [
+        {
+          "name": "老友",
+          "color": "228879",
+          "hue": 171,
+          "saturation": 60,
+          "lightness": 33
+        }
+      ]
+    },
+    {
+      "title": "纸鹿摸鱼处",
+      "url": "https://blog.zhilu.cyou/",
+      "description": "纸鹿至麓不知路，支炉制露不止漉",
+      "icon": "https://www.zhilu.cyou/api/avatar.png",
+      "snapshot": "",
+      "feed": "https://blog.zhilu.cyou/atom.xml",
+      "posts": [
+        {
+          "title": "北京实习300天",
+          "link": "https://blog.zhilu.site/2026/beijing-intern",
+          "published": "2026-03-19 00:31"
+        },
+        {
+          "title": "实习后买了一堆东西",
+          "link": "https://blog.zhilu.site/2026/buy-right",
+          "published": "2026-02-23 11:02"
+        },
+        {
+          "title": "生成式AI正在生成",
+          "link": "https://blog.zhilu.site/2025/ai-abuse",
+          "published": "2025-06-10 21:52"
+        }
+      ],
+      "issue_number": 144,
+      "labels": []
+    },
+    {
+      "title": "Qubik的小站",
+      "url": "https://qubik65536.top",
+      "description": "RECOMMENDED BY DR.CREATIVE",
+      "keywords": "",
+      "icon": "https://gcore.jsdelivr.net/gh/cdn-x/xaoxuu@main/posts/20250706181230925.webp",
+      "snapshot": "https://img.cubik65536.top/cubik65536-top-screenshot.png",
+      "feed": "https://www.qubik65536.top/rss.xml",
+      "posts": [
+        {
+          "title": "Building an Interpreter: Introduction and Lexer",
+          "link": "https://www.qubik65536.top/series/building-interpreter/01-intro-and-lexer",
+          "published": "2026-03-11 10:21"
+        },
+        {
+          "title": "在 Rocky Linux 10 Workstation KDE 上安装中文输入法",
+          "link": "https://www.qubik65536.top/posts/2025-12-23-InstallChineseInputOnRockyWorkstation10KDE",
+          "published": "2025-12-24 07:02"
+        },
+        {
+          "title": "2025 上半年记",
+          "link": "https://www.qubik65536.top/posts/2025-Half-Year-Journal",
+          "published": "2025-07-05 01:00"
+        }
+      ],
+      "issue_number": 95,
+      "labels": []
+    },
+    {
+      "title": "云晓晨 KaiQi.Wang",
+      "url": "https://blog.kaiqi.wang",
+      "icon": "https://cdn.kaiqi.wang/favicon.ico",
+      "snapshot": "https://s0.wp.com/mshots/v1/https://blog.kaiqi.wang",
+      "description": "未来路远 • 勿忘初心",
+      "feed": "https://blog.kaiqi.wang/feed",
+      "posts": [
+        {
+          "title": "Docker 部署鸣潮机器人",
+          "link": "https://blog.kaiqi.wang/571.html",
+          "published": "2026-02-25 12:16"
+        },
+        {
+          "title": "记录一次服务器病毒",
+          "link": "https://blog.kaiqi.wang/553.html",
+          "published": "2025-12-31 15:24"
+        },
+        {
+          "title": "发烧+腹泻的双重折磨",
+          "link": "https://blog.kaiqi.wang/522.html",
+          "published": "2025-09-22 12:30"
+        }
+      ],
+      "issue_number": 158,
+      "labels": []
+    },
+    {
+      "title": "Frederick's Blog",
+      "url": "https://blog.ohdragonboi.cn/",
+      "icon": "https://gcore.jsdelivr.net/gh/fenychn0206/picx-images-hosting@master/avatar.7zqq5a40yn.webp",
+      "snapshot": "https://blog.ohdragonboi.cn//upload/og.PNG",
+      "description": "Sky is the limit.",
+      "feed": "https://blog.ohdragonboi.cn/rss.xml",
+      "posts": [
+        {
+          "title": "博客三周年：缝缝补补的过去",
+          "link": "https://www.ooowl.net/posts/3rd-celebrate/",
+          "published": "2026-02-08 08:00"
+        },
+        {
+          "title": "算法竞赛：为什么要写总结？",
+          "link": "https://www.ooowl.net/posts/algo-review/",
+          "published": "2025-07-15 08:00"
+        },
+        {
+          "title": "数据备份太重要了",
+          "link": "https://www.ooowl.net/posts/backup-is-important/",
+          "published": "2024-08-28 08:00"
+        }
+      ],
+      "issue_number": 153,
+      "labels": []
+    },
+    {
+      "title": "一蓑烟雨的博客",
+      "url": "https://easyf12.top/",
+      "description": "竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生。",
+      "icon": "https://avatars.githubusercontent.com/u/61322612?u=a245e0865a9b24a7188edb34b79370a0a1277c67&v=4&size=80",
+      "snapshot": "https://img.easyf12.top/images/2022/12/10/63948f2d805e3.png",
+      "feed": "https://easyf12.top/atom.xml",
+      "posts": [
+        {
+          "title": "2025年终总结与展望",
+          "link": "https://easyf12.top/posts/1defe4de/",
+          "published": "2026-01-01 04:40"
+        },
+        {
+          "title": "运动会随记",
+          "link": "https://easyf12.top/posts/6fa0ff8b/",
+          "published": "2025-10-13 05:25"
+        },
+        {
+          "title": "认真生活",
+          "link": "https://easyf12.top/posts/b29d3567/",
+          "published": "2025-07-16 21:19"
+        }
+      ],
+      "issue_number": 116,
+      "labels": []
+    },
+    {
+      "title": "MicDZ's blog",
+      "url": "https://www.micdz.cn/cn/",
+      "description": "Robot & Intelligence",
+      "keywords": "",
+      "icon": "https://www.micdz.cn/img/h.jpeg",
+      "snapshot": "",
+      "feed": "https://www.micdz.cn/atom.xml",
+      "posts": [
+        {
+          "title": "Echoes and Gradients: The Hidden Unity Between Radar Imaging and Deep Learning",
+          "link": "https://www.micdz.cn/article/Echoes-and-Gradients-The-Hidden-Unity-Between-Radar-Imaging-and-Deep-Learning/",
+          "published": "2025-12-20 15:29"
+        },
+        {
+          "title": "From DDPM to DDIM — Accelerate Sampling without Extra Training",
+          "link": "https://www.micdz.cn/article/From-DDPM-to-DDIM-Accelerate-Sampling-without-Extra-Training/",
+          "published": "2025-10-29 08:36"
+        },
+        {
+          "title": "Guide to Diffusion Denoising Probabilistic Models (DDPM)",
+          "link": "https://www.micdz.cn/article/Guide-to-DDPM/",
+          "published": "2025-10-25 02:35"
+        }
+      ],
+      "issue_number": 5,
+      "labels": [
+        {
+          "name": "老友",
+          "color": "228879",
+          "hue": 171,
+          "saturation": 60,
+          "lightness": 33
+        }
+      ]
+    },
+    {
+      "title": "sumorio",
+      "url": "https://cn.5mg.fun/",
+      "description": "穿戴整齐面对疯狂的世界。",
+      "icon": "https://gcore.jsdelivr.net/gh/Sumorio/BlogPic/01d44c8e1aa35513951cffcac10b12f9.jpg",
+      "snapshot": "",
+      "feed": "https://cn.5mg.fun/atom.xml",
+      "posts": [
+        {
+          "title": "如何写小说",
+          "link": "https://5mg.fun/posts/58b305af.html",
+          "published": "2025-07-30 17:36"
+        },
+        {
+          "title": "如何写小说提纲",
+          "link": "https://5mg.fun/posts/25037f5b.html",
+          "published": "2025-07-30 17:36"
+        },
+        {
+          "title": "追梦：由“闹钟声”引发的“梦的探索”",
+          "link": "https://5mg.fun/posts/e995d344.html",
+          "published": "2025-07-30 17:36"
+        }
+      ],
+      "issue_number": 129,
+      "labels": []
+    },
+    {
+      "title": "星日语",
+      "url": "https://weekdaycare.cn",
+      "description": "星语日点灯",
+      "keywords": "",
+      "icon": "https://api.iconify.design/line-md:sunny-outline-twotone-loop.svg?color=%23eb4600",
+      "snapshot": "",
+      "feed": "https://weekdaycare.github.io/atom.xml",
+      "posts": [
+        {
+          "title": "村里的狗",
+          "link": "https://weekdaycare.cn/posts/for-dog/",
+          "published": "2025-02-12 17:22"
+        },
+        {
+          "title": "所以，晚上吃什么？",
+          "link": "https://weekdaycare.cn/posts/2025/",
+          "published": "2025-01-07 11:55"
+        },
+        {
+          "title": "泪总不在当下流",
+          "link": "https://weekdaycare.cn/posts/my-grandpa/",
+          "published": "2024-12-18 12:33"
+        }
+      ],
+      "issue_number": 104,
+      "labels": [
+        {
+          "name": "社区先锋",
+          "color": "bbded6",
+          "hue": 166,
+          "saturation": 35,
+          "lightness": 80
+        },
+        {
+          "name": "老友",
+          "color": "228879",
+          "hue": 171,
+          "saturation": 60,
+          "lightness": 33
+        }
+      ]
+    },
+    {
+      "title": "panoshu",
+      "url": "https://www.panoshu.top/",
+      "description": "panoshu's Blog",
+      "keywords": "FinTech, panoshu",
+      "icon": "https://fastly.jsdelivr.net/gh/panoshu/blog-cdn/site/avatar/avatar.webp",
+      "snapshot": "https://www.panoshu.top/assets/images/panoshu.top.png",
+      "feed": "https://www.panoshu.top/atom.xml",
+      "posts": [
+        {
+          "title": "dev on wsl",
+          "link": "https://www.panoshu.top/blog/e6ca0b12/",
+          "published": "2024-11-10 00:04"
+        },
+        {
+          "title": "如何让你的 VPS / Linux 服务器更安全",
+          "link": "https://www.panoshu.top/blog/3fc6d94c/",
+          "published": "2024-07-11 20:55"
+        },
+        {
+          "title": "使用 rsync 同步服务器文件",
+          "link": "https://www.panoshu.top/blog/3d028861/",
+          "published": "2024-03-01 17:27"
+        }
+      ],
+      "issue_number": 99,
+      "labels": []
+    },
+    {
+      "title": "超凡’s Blog",
+      "url": "https://chaofan.xyz",
+      "description": "",
+      "icon": "https://avatars.githubusercontent.com/u/60053994?u=ba2a665913b9006db5e643e3ac8fb9a102ff1abc&v=4&size=80",
+      "snapshot": "https://file.chaofan.xyz/blog/202212250203342.png",
+      "feed": "https://chaofan.xyz/atom.xml",
+      "posts": [
+        {
+          "title": "CountDownLatch和CyclicBarrier的区别",
+          "link": "https://chaofan.xyz/posts/6f3f7f34/",
+          "published": "2024-03-01 06:56"
+        },
+        {
+          "title": "alertmanager通知时机",
+          "link": "https://chaofan.xyz/posts/4a58f7b9/",
+          "published": "2024-01-22 05:14"
+        },
+        {
+          "title": "使用Prometheus监控应用指标",
+          "link": "https://chaofan.xyz/posts/49b1cc7e/",
+          "published": "2023-09-30 08:48"
+        }
+      ],
+      "issue_number": 118,
+      "labels": []
+    },
+    {
+      "title": "枋柚梓",
+      "url": "https://inkss.cn",
+      "icon": "https://inkss.cn/icon/favicon.svg",
+      "snapshot": "https://i.loli.net/2020/08/21/Vzbu3i8fXs6Nh5Y.jpg",
+      "description": "繁星永存 记忆亘古不变",
+      "feed": "https://inkss.cn/atom.xml",
+      "posts": [
+        {
+          "title": "基于爱快路由的 IPV6 网络防火墙设置",
+          "link": "https://inkss.cn/post/8fe38c87/",
+          "published": "2023-11-07 17:20"
+        },
+        {
+          "title": "宝塔面板部署 ModSecurity",
+          "link": "https://inkss.cn/post/f0451fab/",
+          "published": "2022-03-25 12:46"
+        },
+        {
+          "title": "从 1Password 迁移到 Bitwarden：一次涨价引发的“搬家”",
+          "link": "https://inkss.cn/post/5a013cf6/",
+          "published": "2026-05-08 11:55"
+        }
+      ],
+      "issue_number": 157,
+      "labels": [
+        {
+          "name": "社区先锋",
+          "color": "bbded6",
+          "hue": 166,
+          "saturation": 35,
+          "lightness": 80
+        },
+        {
+          "name": "老友",
+          "color": "228879",
+          "hue": 171,
+          "saturation": 60,
+          "lightness": 33
+        }
+      ]
+    },
+    {
+      "title": "Colsrch",
+      "url": "https://colsrch.cn",
+      "description": "愿多年以后，我可以酌一杯清酒，烂醉如泥，梦中回到我们的曾经。",
+      "icon": "https://bu.dusays.com/2022/02/23/cb173cbdcc7c6.png",
+      "snapshot": "https://bu.dusays.com/2020/09/05/893e98a441d5f.png",
+      "feed": "https://colsrch.cn/atom.xml",
+      "posts": [
+        {
+          "title": "配置 WSL 开发 Flet 应用",
+          "link": "https://colsrch.cn/posts/59012193/",
+          "published": "2023-09-06 14:01"
+        },
+        {
+          "title": "Volantis 如何在主页添加卡片",
+          "link": "https://colsrch.cn/posts/71314686/",
+          "published": "2022-12-30 16:14"
+        },
+        {
+          "title": "ping 每隔几秒出现一次延迟特别大的解决方法",
+          "link": "https://colsrch.cn/posts/3d50f4a2/",
+          "published": "2022-09-14 14:41"
+        }
+      ],
+      "issue_number": 108,
+      "labels": [
+        {
+          "name": "社区先锋",
+          "color": "bbded6",
+          "hue": 166,
+          "saturation": 35,
+          "lightness": 80
+        },
+        {
+          "name": "老友",
+          "color": "228879",
+          "hue": 171,
+          "saturation": 60,
+          "lightness": 33
+        }
+      ]
+    },
+    {
+      "title": "YuGao's Blog",
+      "url": "https://sxyugao.top",
+      "description": "",
+      "keywords": "",
+      "icon": "https://gcore.jsdelivr.net/gh/cdn-x/xaoxuu@main/posts/20250706181653749.webp",
+      "snapshot": "",
+      "feed": "https://sxyugao.top/rss.xml",
+      "posts": [
+        {
+          "title": "HWS第七期2023夏令营选拔赛 Writeup",
+          "link": "https://sxyugao.top/p/20fb689d.html",
+          "published": "2023-07-29 23:30"
+        },
+        {
+          "title": "领航杯江苏省赛 2022 Linkgame",
+          "link": "https://sxyugao.top/p/50315424.html",
+          "published": "2023-04-08 17:43"
+        },
+        {
+          "title": "HWS第六期2023冬令营选拔赛 Writeup",
+          "link": "https://sxyugao.top/p/146f06a.html",
+          "published": "2023-03-29 15:14"
+        }
+      ],
+      "issue_number": 15,
+      "labels": []
+    },
+    {
+      "title": "DearXuan",
+      "url": "https://blog.dearxuan.com",
+      "description": "编程,算法",
+      "keywords": "算法",
+      "icon": "https://gcore.jsdelivr.net/gh/cdn-x/xaoxuu@main/posts/20250706181726437.jpeg",
+      "snapshot": "https://bu.dusays.com/2021/08/27/c0424b7eb583a.jpg",
+      "feed": "https://static.dearxuan.com/atom.xml",
+      "posts": [
+        {
+          "title": "矩阵论-线性算子",
+          "link": "https://blog.dearxuan.com/2023/05/29/%E7%9F%A9%E9%98%B5%E8%AE%BA-%E7%BA%BF%E6%80%A7%E7%AE%97%E5%AD%90/",
+          "published": "2023-05-29 16:21"
+        },
+        {
+          "title": "我的世界mod开发",
+          "link": "https://blog.dearxuan.com/2023/05/16/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8Cmod%E5%BC%80%E5%8F%91/",
+          "published": "2023-05-16 22:18"
+        },
+        {
+          "title": "矩阵论-线性空间",
+          "link": "https://blog.dearxuan.com/2023/04/13/%E7%9F%A9%E9%98%B5%E8%AE%BA-%E7%BA%BF%E6%80%A7%E7%A9%BA%E9%97%B4/",
+          "published": "2023-04-13 19:55"
+        }
+      ],
+      "issue_number": 91,
+      "labels": []
+    },
+    {
+      "title": "小冰博客",
+      "url": "https://zfe.space/",
+      "description": "咕咕咕",
+      "group": "技术大佬",
+      "icon": "https://bu.dusays.com/2021/03/03/fb0b9a5854790.png",
+      "snapshot": "https://bu.dusays.com/2022/11/01/63609f0c2fe05.png",
+      "feed": "https://zfe.space/atom.xml",
+      "posts": [
+        {
+          "title": "制作你的桌面MMD时钟：MMD-BOX Beta1.0",
+          "link": "https://zfe.space/post/mmd-box-1.0.html",
+          "published": "2022-08-07 07:19"
+        },
+        {
+          "title": "小冰的游戏评测",
+          "link": "https://zfe.space/post/game-play.html",
+          "published": "2021-04-23 05:19"
+        },
+        {
+          "title": "小冰插件包 butterfly-orchid 1.0",
+          "link": "https://zfe.space/post/hexo-butterfly-orchid.html",
+          "published": "2021-03-26 05:19"
+        }
+      ],
+      "issue_number": 78,
+      "labels": []
+    },
+    {
+      "title": "幼稚园园长",
+      "url": "https://yzyyz.top/",
+      "description": "林深时见鹿",
+      "keywords": "生活，Python",
+      "icon": "https://gcore.jsdelivr.net/gh/cdn-x/xaoxuu@main/posts/20250706182416793.webp",
+      "snapshot": "https://bu.dusays.com/2021/03/04/71334cf0bbf28.png",
+      "feed": "https://raw.githubusercontent.com/yzyyz1387/yzyyz1387.github.io/refs/heads/master/atom.xml",
+      "posts": [
+        {
+          "title": "记一次B站播放过10万",
+          "link": "https://yzyyz.top/archives/becb15dd.html",
+          "published": "2022-04-23 09:52"
+        },
+        {
+          "title": "资源链接汇总",
+          "link": "https://yzyyz.top/archives/4ed97ea8.html",
+          "published": "2022-04-23 09:23"
+        },
+        {
+          "title": "保持清醒",
+          "link": "https://yzyyz.top/archives/447f259f.html",
+          "published": "2022-04-15 00:53"
+        }
+      ],
+      "issue_number": 72,
+      "labels": []
+    },
+    {
+      "title": "qinxs",
+      "url": "https://7bxing.com/",
+      "description": "",
+      "keywords": "",
+      "icon": "https://gcore.jsdelivr.net/gh/cdn-x/xaoxuu@main/posts/20250706181948965.webp",
+      "snapshot": "https://7.dusays.com/2021/02/05/3c00bf4c30766.png",
+      "feed": "https://7bxing.com/atom.xml",
+      "posts": [
+        {
+          "title": "Win32 API编程——前言",
+          "link": "https://7bxing.com/posts/67bdf631/",
+          "published": "2022-02-26 19:43"
+        },
+        {
+          "title": "【原创作品】Ease Bookmarks",
+          "link": "https://7bxing.com/posts/beb3fd2a/",
+          "published": "2021-12-27 21:01"
+        },
+        {
+          "title": "从AI导出Web的SVG的最佳设置",
+          "link": "https://7bxing.com/posts/f28f8693/",
+          "published": "2021-09-06 21:03"
+        }
+      ],
+      "issue_number": 56,
+      "labels": []
+    },
+    {
+      "title": "大涛子客栈",
+      "url": "https://www.yangtao.site/",
+      "description": "",
+      "keywords": "",
+      "icon": "https://gcore.jsdelivr.net/gh/cdn-x/xaoxuu@main/posts/20250706182230520.png",
+      "snapshot": "",
+      "feed": "",
+      "posts": [
+        {
+          "title": "在 Nginx 服务器上配置 HTTPS 证书",
+          "link": "https://www.yangtao.site/2020/04/04/http-https/",
+          "published": "2020-04-04 13:56"
+        },
+        {
+          "title": "JavaScript 深浅拷贝",
+          "link": "https://www.yangtao.site/2020/04/03/code-copy/",
+          "published": "2020-04-03 03:04"
+        }
+      ],
+      "issue_number": 11,
+      "labels": [
+        {
+          "name": "已停更",
+          "color": "FEF2C0",
+          "hue": 48,
+          "saturation": 97,
+          "lightness": 87
+        }
+      ]
+    },
+    {
+      "title": "阿黄说",
+      "url": "https://f12ahs.top/",
+      "icon": "https://avatars.githubusercontent.com/u/186286899?v=4",
+      "snapshot": "",
+      "description": "NeverSettle不将就",
+      "feed": "https://f12ahs.top/atom.xml",
+      "posts": [],
+      "issue_number": 159,
+      "labels": []
+    },
+    {
+      "title": "子书承宇",
+      "url": "https://blog.findingx.cc/",
+      "avatar": "https://gcore.jsdelivr.net/gh/cdn-x/xaoxuu@main/posts/20250706180429658.webp",
+      "screenshot": "https://gcore.jsdelivr.net/gh/cdn-x/xaoxuu@main/posts/20250706173247530.webp",
+      "description": "霰雪纷其无垠兮，云霏霏而承宇",
+      "feed": "",
+      "posts": [],
+      "issue_number": 134,
+      "labels": [],
+      "icon": "https://avatars.githubusercontent.com/u/136073046?v=4"
+    },
+    {
+      "title": "Chenli",
+      "url": "https://chenliss.cn/",
+      "description": "记录生活,分享生活",
+      "icon": "https://bu.dusays.com/2023/08/17/64dcf6a805f44.png",
+      "snapshot": "https://bu.dusays.com/2023/08/27/64ea32a1115f1.png",
+      "feed": "",
+      "issue_number": 126,
+      "labels": []
+    },
+    {
+      "title": "钟意博客",
+      "url": "https://log.cns.red/",
+      "description": "感谢你的阅读.",
+      "icon": "https://upyun.thatcdn.cn/hexo/stellar/image/favicon.webp",
+      "snapshot": "https://upyun.thatcdn.cn/hexo/stellar/image/shot.webp!screenshot",
+      "feed": "https://log.cns.red/atom.xml",
+      "posts": [],
+      "issue_number": 122,
+      "labels": [
+        {
+          "name": "失联",
+          "color": "D93F0B",
+          "hue": 15,
+          "saturation": 90,
+          "lightness": 45
+        },
+        {
+          "name": "社区先锋",
+          "color": "bbded6",
+          "hue": 166,
+          "saturation": 35,
+          "lightness": 80
+        },
+        {
+          "name": "老友",
+          "color": "228879",
+          "hue": 171,
+          "saturation": 60,
+          "lightness": 33
+        }
+      ]
+    },
+    {
+      "title": "MerryJingle",
+      "url": "http://blog.pengfeima.cn",
+      "description": "快乐的铃铛",
+      "icon": "https://avatars.githubusercontent.com/u/115222128",
+      "snapshot": "https://images_github.pengfeima.cn/images/202211172254234.png",
+      "feed": "",
+      "issue_number": 111,
+      "labels": [
+        {
+          "name": "老友",
+          "color": "228879",
+          "hue": 171,
+          "saturation": 60,
+          "lightness": 33
+        }
+      ]
+    },
+    {
+      "title": "shixiaocaia",
+      "url": "https://shixiaocaia.fun/",
+      "description": "去做吧，反正都会后悔。",
+      "icon": "https://gcore.jsdelivr.net/gh/cdn-x/xaoxuu@main/posts/20250706184431460.webp",
+      "snapshot": "http://pic.shixiaocaia.fun/202210291059098.png",
+      "feed": "https://shixiaocaia.fun/index.xml",
+      "posts": [],
+      "issue_number": 110,
+      "labels": []
+    },
+    {
+      "title": "ITBOB’S BLOG",
+      "url": "https://www.itbob.cn/",
+      "description": "",
+      "keywords": "网络爬虫、逆向安全",
+      "icon": "https://gcore.jsdelivr.net/gh/cdn-x/xaoxuu@main/posts/20250706181842682.png",
+      "snapshot": "",
+      "feed": "https://www.itbob.cn/atom.xml",
+      "posts": [],
+      "issue_number": 100,
+      "labels": [
+        {
+          "name": "老友",
+          "color": "228879",
+          "hue": 171,
+          "saturation": 60,
+          "lightness": 33
+        }
+      ]
+    },
+    {
+      "title": "Yanliang",
+      "url": "https://yanliang.cool",
+      "description": "",
+      "keywords": "",
+      "icon": "https://cdn.jsdelivr.net/gh/gyl-coder/blogImgs@main/blog/img/head.png",
+      "snapshot": "",
+      "feed": "",
+      "issue_number": 89,
+      "labels": [
+        {
+          "name": "失联",
+          "color": "D93F0B",
+          "hue": 15,
+          "saturation": 90,
+          "lightness": 45
+        },
+        {
+          "name": "已停更",
+          "color": "FEF2C0",
+          "hue": 48,
+          "saturation": 97,
+          "lightness": 87
+        }
+      ]
+    },
+    {
+      "title": "CAYZLH",
+      "url": "https://www.cayzlh.com",
+      "description": "CODE IS POETRY",
+      "icon": "https://gcore.jsdelivr.net/gh/cdn-x/xaoxuu@main/posts/20250706182620001.webp",
+      "snapshot": "https://jsd.cdn.zzko.cn/gh/cayzlh/git-img-repository@master/uPic/0A1dao.png",
+      "feed": "",
+      "issue_number": 85,
+      "labels": []
+    },
+    {
+      "title": "Reqwey's Blog",
+      "url": "https://oi.reqwey.me",
+      "description": "With peace and ❤️",
+      "keywords": "算法竞赛",
+      "icon": "https://q1.qlogo.cn/g?b=qq&nk=3530813030&s=3",
+      "snapshot": "https://i.loli.net/2020/08/21/3PmGLCKicnfow1x.png",
+      "feed": "https://oi.reqwey.me/atom.xml",
+      "posts": [],
+      "issue_number": 76,
+      "labels": [
+        {
+          "name": "失联",
+          "color": "D93F0B",
+          "hue": 15,
+          "saturation": 90,
+          "lightness": 45
+        },
+        {
+          "name": "老友",
+          "color": "228879",
+          "hue": 171,
+          "saturation": 60,
+          "lightness": 33
+        }
+      ]
+    }
+  ]
+}
