@@ -23,7 +23,7 @@
 ```yaml
 title: xaoxuu
 url: https://xaoxuu.com
-avatar: https://cn.cravatar.com/avatar/15e59a60168a6ce1bfc3eddfca8c5a54?s=512
+avatar: https://weavatar.com/avatar/eba79703a241eb3526cf9a35acea6339210b15aa03247e623ce77226399cb057?sha256=1&d=mp&s=512
 screenshot: https://xaoxuu.com/assets/xaoxuu/2022/10/23/63542895cfd29.png
 description: For all time, always.
 feed: https://xaoxuu.com/atom.xml
